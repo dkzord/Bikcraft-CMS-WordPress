@@ -12,22 +12,16 @@
 
             <div class="grid-10">
                 <h2 class="subtitulo-interno">História, Missão e Visão</h2>
-                <p>Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
-                <p>Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
+                <?php the_field('story_about'); ?>
             </div>
 
             <div class="grid-6">
                 <h2 class="subtitulo-interno">Valores</h2>
-                <ul>
-                    <li>- Qualidade no processo com</li>
-                    <li>- Foco no cliente sem perde a</li>
-                    <li>- Diversão, preservando  a</li>
-                    <li>- Natureza com sustentabilidade</li>
-                </ul>
+                <?php the_field('story_about_values'); ?>
             </div>
 
             <div class="grid-16 foto-equipe">
-                <img src="img/equipe-bikcraft.jpg" alt="Equipe Bikcraft">
+                <img src="<?php the_field('team_img'); ?>" alt="Equipe Bikcraft">
             </div>
 
     </section>

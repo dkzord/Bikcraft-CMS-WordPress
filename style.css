@@ -149,7 +149,6 @@ img {
     width: 100%;
     height: 380px;
     margin-top: 82px;
-    background: #000 url(img/bg-intro.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
     padding-top: 80px;
@@ -511,4 +510,311 @@ img {
 
 #form-erro {
     color: #f64540;
+}
+
+/* -------------------------------
+RESPOSIVIDADE 
+--------------------------------*/
+
+
+/* ESTILOS PARA TELAS DE TABLETS */
+@media only screen and (min-width: 788px) and (max-width: 979px){
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA STYLO.CSS
+
+    -----------------------------------------*/
+
+    /* QUALIDADE */
+    .qualidade::after {
+        background: url(../img/mobile/linhas.svg) no-repeat center;
+        right: 67px;
+    }
+
+    .qualidade_lista li {
+        padding: 0 10px;
+    }
+
+    /* PRODUTOS */
+
+
+
+    /* FOOTER */
+
+    .footer_redes ul li a img{
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA SOBRE.CSS
+
+    -----------------------------------------*/
+
+    .interna_sobre {
+        background: #000 url(../img/mobile/bg-sobre.png) no-repeat center;
+        background-size: cover;
+    }
+
+
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA PRODUTOS.CSS
+
+    -----------------------------------------*/
+    .interna_produtos { 
+        background: #000 url(../img/mobile/bg-produtos.png) no-repeat center;
+        background-size: cover;
+    }
+
+
+    .produto_item h2 {
+        top: -150px;
+    }
+
+    .produto_icone {
+        padding: 41px 0;
+    }
+
+    .produto_info p{
+        font-size: 14px;
+        line-height: 20px;
+        height: 122px;
+        padding: 18px 30px;
+    }
+    
+
+    .produto_info ul li{
+        font-size: 16px;
+        line-height: 20px;
+        width: 181px;
+        height: 49px;
+    }
+
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA PORTFOLIO.CSS
+
+    -----------------------------------------*/
+
+    .interna_portfolio {
+        background: #000 url(../img/mobile/bg-portfolio.png) no-repeat center;
+        background-size: cover;
+    }
+
+    
+    .quote-portfolio cite {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        position: relative;
+        right: -165px;
+    }
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA CONTATOS.CSS
+
+    -----------------------------------------*/
+    .interna_contatos { 
+        background: #000 url(../img/mobile/bg-contato.png) no-repeat center;
+        background-size: cover;
+    }
+
+
+
+}
+
+
+/* ESTILO PARA TELAS DE TELEFONE */
+@media only screen and (max-width: 787px){
+
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA STYLO.CSS
+
+    -----------------------------------------*/
+    .customize-support .header {
+        margin-top: 0;
+    }
+
+    /* PARTE DE GERAL */
+    .intro-interna {
+        margin-top: 0;
+    }
+
+    /* HEADER (MENU) DO SITE */
+    .header {
+        position: relative;
+    }
+
+    .header img {
+        margin: 0 auto 10px auto;
+    }
+
+    .header_menu {
+        text-align: center;
+    }
+
+    .header_menu ul li {
+        margin: 5px;
+    }
+
+    .header_menu ul li a {
+        border: 4px solid #000;
+        width: 136px;
+        display: block;
+        float: left;
+        padding: 5px 0;
+    }
+
+    .header_menu ul li a:hover{
+        border-color: #fff;
+        transition: 0.5s;
+    }
+
+    .header_menu ul li a.menu_ativo {
+        border-color: #fff;
+    }
+
+    /* INTRO */
+    .intro {
+        margin-top: 0;
+        padding-top: 20px;
+        background-size: cover;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+        margin: 35px auto 0 auto;
+    }
+
+    /* QUALIDADE NA HOME */
+    .qualidade::after {
+        background: none;
+    }
+
+    /* PARTE DE PORTFOLIO */
+    .call-to-action {
+        padding-top: 20px;
+    }
+
+    /* CITACÃO ANTES DO FOOTER */
+    .quebra {
+        background: #000 url(../img/mobile/bg-footer.png) no-repeat center;
+    }
+
+
+
+
+    /* -----------------------------------------
+    
+        MODIFICAÇÃO PAGINA DE SOBRE.CSS
+    
+    ---------------------------------------------*/
+
+    .interna_sobre {
+        background: #000 url(../img/mobile/bg-sobre.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .missao_sobre p {
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 0;
+    }
+
+    .missao_sobre ul li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA PRODUTOS.CSS
+
+    -----------------------------------------*/
+    .interna_produtos { 
+        background: #000 url(../img/mobile/bg-produtos.png) no-repeat center;
+        background-size: cover;
+    }
+
+
+    .produto_item h2 {
+        font-size: 24px;
+        top: -95px;
+        margin-bottom: -51px;
+    }
+
+    .produto_icone {
+        padding: 50px 0;
+    }
+
+    .produto_info p{
+        font-size: 14px;
+        line-height: 20px;
+        height: auto;
+        padding: 18px 30px;
+    }
+
+    .produto_info ul li{
+        font-size: 14px;
+        line-height: 20px;
+        width: 149px;
+        height: 49px;
+        padding: 14px;
+    }
+
+    .form {
+        padding-right: 0;
+    }
+
+    .dados_orcamento ul {
+        padding-right: 0;
+    }
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA PORTFOLIO.CSS
+
+    -----------------------------------------*/
+    .interna_portfolio {
+        background: #000 url(../img/mobile/bg-portfolio.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .quote-portfolio cite {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        position: relative;
+        right: -85px;
+    }
+
+    /*---------------------------------------
+
+        MODIFICAÇÃO NA PAGINA CONTATOS.CSS
+
+    -----------------------------------------*/
+    .interna_contatos { 
+        background: #000 url(../img/mobile/bg-contato.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .contatos_form {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
 }
