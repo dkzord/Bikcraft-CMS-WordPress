@@ -10,7 +10,7 @@
     <!-- FORMULARIO DO ORÇAMENTO  -->
     <section data-anime="1600" class="container contatos fadeInDown">
 
-                <form id="form_orcamento" method="POST" action="./enviar-sendgrid.php" class="contatos_form formphp grid-8">
+                <form id="form_orcamento" method="POST" action="<?php echo get_template_directory_uri(); ?>/enviar.php" class="contatos_form formphp grid-8">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" required>
 
@@ -37,22 +37,14 @@
 
             <div class="dados_contatos grid-8">
                 <h3>Dados</h3>
-                <span>(21) 9999-9999</span>
-                <span>contato@bikcraft.com</span>
-                <span>Rua do Birobiro - Bota Fogo</span>
-                <span>Rio de Janeiro - RJ - Brasil</span>
+                <span><?php the_field('phone'); ?></span>
+                <span><?php the_field('email'); ?></span>
+                <span><?php the_field('address1'); ?></span>
+                <span><?php the_field('address2'); ?></span>
                 
                 <div class="contatos_redes">
-                    <h3>redes sociais</h3>
-                    <ul>
-
-                        <li><a href="https://www.facebook.com/" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="facebook"></a></li>
-                    
-                        <li><a href="https://www.instagram.com/" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="instagram"></a></li>
-
-                        <li><a href="http://twitter.com/" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="twitter"></a></li>
-                  
-                    </ul>
+                    <h3>Redes Sociais</h3>
+                    <?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
                 </div>
 
             </div>
@@ -60,7 +52,7 @@
 
     <!-- MAPA -->
     <div data-anime="2000" class="container contato_mapa fadeInDown">
-        <a href="https://www.google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="endereço da bikcraft"></a>
+        <a href="<?php the_field('link_map'); ?>" target="_blank" class="grid-16"><img src="<?php the_field('img_map'); ?>" alt="<?php the_field('quote_map'); ?>"></a>
     </div>
 
 <?php endwhile; else: endif; ?>

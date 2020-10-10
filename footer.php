@@ -1,4 +1,11 @@
-    <!-- QUEBRA ANTES DO FOOTER -->
+<style type="text/css">
+    .quebra {
+        background: #000 url(../img/bg-footer.jpg) no-repeat center;
+        background-size: cover;
+    }
+</style>   
+   
+   <!-- QUEBRA ANTES DO FOOTER -->
         <div class="quebra">
         
                 <blockquote class="quote-externo container">
@@ -27,16 +34,8 @@
                     </div>
                     
                     <div class="grid-4 footer_redes">
-                        <h3>redes sociais</h3>
-                        <ul>
-
-                            <li><a href="https://www.facebook.com/" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="facebook"></a></li>
-                        
-                            <li><a href="https://www.instagram.com/" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="instagram"></a></li>
-
-                            <li><a href="http://twitter.com/" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="twitter"></a></li>
-                    
-                        </ul>
+                        <h3>Redes Sociais</h3>
+                        <?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
                     </div>
 
                 </div>
