@@ -1,7 +1,7 @@
 <style type="text/css">
     .intro-interna {
-    background: #000 url(<?php the_field('background_interno'); ?>) no-repeat center;
-    background-size: cover;
+        background: #000 url(<?php the_field('background_interno'); ?>) no-repeat center;
+        background-size: cover;
     }
 </style>
 
