@@ -1,6 +1,9 @@
+<?php $contatos = get_page_by_title('contatos'); ?>
+
 <style type="text/css">
     .quebra {
-        background: #000 url(../img/bg-footer.jpg) no-repeat center;
+
+        background: #000 url("<?php the_field('background_footer', $contatos); ?>") no-repeat center;
         background-size: cover;
     }
 </style>   
@@ -9,8 +12,8 @@
         <div class="quebra">
         
                 <blockquote class="quote-externo container">
-                    <p>"O verdadeiro segredo da felicidade é ter um genuíno interesse por todos os detalhes da vida cotidiana"</p>
-                    <cite>William Morris</cite>
+                <?php the_field('quote_footer', $contatos); ?>
+                <cite><?php the_field('cite_footer', $contatos); ?></cite>
                 </blockquote>
             
         </div>
@@ -21,15 +24,15 @@
                 <div class="container">
                     <div class="grid-8 footer_historia">
                         <h3>Nossa história</h3>
-                        <p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha. É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha.</p>
+                        <?php the_field('story_footer', $contatos); ?>
                     </div>
 
                     <div class="grid-4 footer_contatos">
                         <h3>Contato</h3>
                         <ul>
-                            <li>- 21 9999-9999</li>
-                            <li>- contato@bikcraft.com</li>
-                            <li>- Bota Fogo - RJ</li>
+                            <li>- <?php the_field('phone', $contatos); ?></li>
+                            <li>- <?php the_field('email', $contatos); ?></li>
+                            <li>- <?php the_field('address2', $contatos); ?></li>
                         </ul>
                     </div>
                     
@@ -45,7 +48,7 @@
             <!-- Copyright -->
             <div class="copy">
                 <div class="container">
-                    <p class="grid-16"> &copy;Bikcraft 2020 - Alguns direitos reservadors</p>
+                    <p class="grid-16"> &copy;<?php bloginfo('name') ?> <?php echo date('Y'); ?> - Alguns direitos reservadors</p>
                 </div>
             </div>
         </footer>
