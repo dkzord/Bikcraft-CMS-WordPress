@@ -43,31 +43,27 @@
         <h2 class="subtitulo">Produtos</h2>
 
         <ul class="produtos_lista">
+            <?php
+                $args = array (
+                    'post_type' => 'produtos'
+                );
+                $the_query = new WP_Query ( $args );
+            ?>
+
+            <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
             <li class="grid-1-3">
-                <div class="produtos_icones">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/produto/passeio.svg" alt="Bikcraft passeio">
-                </div>
-                <h3>Passeio</h3>
-                <p>Ainda assim, existme dúvidas a respeito de como a necessidade de renovação.</p>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="produtos_icones">
+                        <img src="<?php the_field('main_icon'); ?>" alt="Bikcraft passeio">
+                    </div>
+                    <h3><?php the_title(); ?></h3>
+                    <p><?php the_field('resumo_produto'); ?></p>
+                </a>
             </li>
 
-            <li class="grid-1-3">
-                <div class="produtos_icones">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/produto/esporte.svg" alt="Bikcraft passeio">
-                </div>
-                <h3>Esporte</h3>
-                <p>Ainda assim, existme dúvidas a respeito de como a necessidade de renovação.</p>
-            </li>
-
-            <li class="grid-1-3">
-                <div class="produtos_icones">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/produto/retro.svg" alt="Bikcraft passeio">
-                </div>
-                <h3>Retrô</h3>
-                <p>Ainda assim, existme dúvidas a respeito de como a necessidade de renovação.</p>
-            </li>
-
+            <?php endwhile; else: endif; ?>
+            <?php wp_reset_query(); wp_reset_postdata(); ?>
         </ul>
 
         <div class="call-to-action">
