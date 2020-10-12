@@ -73,19 +73,14 @@
 
     </section>
 
-
     <!-- PORTFÓLIO -->
-
     <section data-anime="2000" class="portfolio fadeInDown">
-        <div class="container">
-            <h2 class="subtitulo">Portfólio</h2>
-            <?php include(TEMPLATEPATH . "/inc/client-portfolio.php"); ?>
+        <h2 class="subtitulo">Portfólio</h2>
+        <div class="container" data-slide="portfolio">
+            <?php include(TEMPLATEPATH . '/inc/client-portfolio.php');?>
         </div>
     </section>
-
     <!-- QUALIDADE -->
     <?php include(TEMPLATEPATH . "/inc/quality.php"); ?>
-
-
 <?php endwhile; else: endif; ?>
 <?php get_footer(); ?>

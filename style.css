@@ -14,6 +14,7 @@ Version: 1.0
 @import 'css/produtos.css';
 @import 'css/portfolio.css';
 @import 'css/contatos.css';
+@import 'css/blog.css';
 
 /* Estilos ADM WordPress */
 .customize-support .header {
@@ -616,7 +617,7 @@ RESPOSIVIDADE
     }
 
     
-    .quote-portfolio cite {
+    .quote-portf cite {
         font-size: 18px;
         font-weight: bold;
         font-style: normal;
@@ -800,7 +801,7 @@ RESPOSIVIDADE
         background-size: cover;
     }
 
-    .quote-portfolio cite {
+    .quote-portf cite {
         font-size: 18px;
         font-weight: bold;
         font-style: normal;

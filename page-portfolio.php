@@ -8,23 +8,20 @@ get_header();
     <?php include(TEMPLATEPATH . "/inc/intro.php"); ?>
 
     <!-- CITAÇÃO -->
-    <section class="container">
-        <ul class="rslides">
+    <section data-anime="1600" class="container fadeInDown rslides_portfolio" data-slide="quote">
+        
             <?php if(have_rows('quote_portfolio')): while(have_rows('quote_portfolio')) : the_row(); ?>
-            <li>
-                <blockquote class="quote-portfolio">
-                    <?php the_sub_field('quote'); ?>
+                <blockquote class="quote-portf">
+                    <?php the_sub_field('quote_portfolio'); ?>
                     <cite><?php the_sub_field('name_quote'); ?></cite>
                 </blockquote>
-            </li>
             <?php endwhile; else : endif; ?>
-
-        </ul>
+        
     </section>
 
     <!-- PORTFÓLIO -->
-    <section class="portfolio">
-        <div class="container">
+    <section data-anime="2000" class="portfolio fadeInDown" >
+        <div class="container" data-slide="portfolio">
             <?php include(TEMPLATEPATH . "/inc/client-portfolio.php"); ?>
         </div>
     </section>
