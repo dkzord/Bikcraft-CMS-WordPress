@@ -17,6 +17,11 @@
         background-size: cover;
     }
 
+    .qualidade::after {
+    background: url(<?php the_field('background_quality'); ?>) no-repeat center;
+    position: absolute;
+    }
+
     @media only screen and (max-width: 787px){
         .intro {
         background: #000 url(<?php echo $background_medium[0] ?>) no-repeat center;
@@ -78,6 +83,10 @@
         <h2 class="subtitulo">Portfólio</h2>
         <div class="container" data-slide="portfolio">
             <?php include(TEMPLATEPATH . '/inc/client-portfolio.php');?>
+        </div>
+        <div class="call-to-action">
+        <p><?php the_field('call_portfolio'); ?></p>
+        <a href="/portfolio/" class="btn">portfólio</a>
         </div>
     </section>
     <!-- QUALIDADE -->

@@ -326,7 +326,7 @@ img {
     display: block;
     background: url(../img/linhas.svg) no-repeat center;
     position: absolute;
-    top: 223px;
+    top: 210px;
     right: 163px;
     z-index: -1;
 }

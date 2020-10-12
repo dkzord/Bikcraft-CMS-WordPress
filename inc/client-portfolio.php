@@ -10,8 +10,5 @@
 
 
 <?php if (!is_page('portfolio')) { ?>
-<div class="call-to-action">
-    <p><?php the_field('call_portfolio'); ?></p>
-    <a href="/portfolio/" class="btn">portfólio</a>
-</div>
+
 <?php } ?>
