@@ -1,10 +1,10 @@
-.quote-portfolio {
+.quote-portf {
     max-width: 460px;
     padding: 60px 0;
     margin: 0 auto;
 }
 
-.quote-portfolio p {
+.quote-portf p {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -13,7 +13,7 @@
     margin-bottom: 20px;
 }
 
-.quote-portfolio cite {
+.quote-portf cite {
     font-size: 18px;
     font-weight: bold;
     font-style: normal;
