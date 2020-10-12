@@ -17,9 +17,11 @@
         background-size: cover;
     }
 
-    .qualidade::after {
-    background: url(<?php the_field('background_quality'); ?>) no-repeat center;
-    position: absolute;
+    @media only screen and (min-width: 788px){
+        .qualidade::after {
+        background: url(<?php the_field('background_quality'); ?>) no-repeat center;
+        position: absolute;
+        }
     }
 
     @media only screen and (max-width: 787px){
