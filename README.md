@@ -1,4 +1,4 @@
-# 💰 Projeto Clone Spotify
+# 💰 Projeto Bikcraft
 
 <h1>
     <img src="https://ik.imagekit.io/dkzord/bikcraft_U8plyg5rR.PNG">
