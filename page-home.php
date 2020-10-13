@@ -41,7 +41,7 @@
                 <p><?php the_field('intro_quote'); ?></p>
                 <cite><?php the_field('cite_quote'); ?></cite>
             </blockquote>
-            <a href="/produtos/" data-anime="1200" class="btn">Orçamento</a>
+            <a href="<?php bloginfo('url'); ?>/produtos/" data-anime="1200" class="btn">Orçamento</a>
         </div>
     </section>
 
@@ -75,7 +75,7 @@
 
         <div class="call-to-action">
             <p><?php the_field('call_products'); ?></p>
-            <a href="/produtos/" class="btn btn-preto">Produtos</a>
+            <a href="<?php bloginfo('url'); ?>/produtos/" class="btn btn-preto">Produtos</a>
         </div>
 
     </section>
@@ -88,7 +88,7 @@
         </div>
         <div class="call-to-action">
         <p><?php the_field('call_portfolio'); ?></p>
-        <a href="/portfolio/" class="btn">portfólio</a>
+        <a href="<?php bloginfo('url'); ?>/portfolio/" class="btn">portfólio</a>
         </div>
     </section>
     <!-- QUALIDADE -->

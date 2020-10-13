@@ -15,7 +15,7 @@
     <?php if (!is_page('sobre')) { ?>
     <div class="call-to-action">
         <p><?php the_field('call_about', $sobre); ?></p>
-        <a href="/sobre/" class="btn btn-preto">sobre</a>
+        <a href="<?php bloginfo('url'); ?>/sobre/" class="btn btn-preto">sobre</a>
     </div>
     <?php } ?>
 </section>
