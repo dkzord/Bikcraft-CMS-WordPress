@@ -26,7 +26,6 @@
 
                     <label class="nao-aparece">Se você não é um robô, não mude esse campo</label>
                     <input type="text" class="nao-aparece" name="dontchange" value="http://">
-
                     <!-- FIM -->
 
                     <label for="mensagem">Mensagem</label>
